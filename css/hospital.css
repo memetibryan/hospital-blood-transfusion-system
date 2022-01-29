@@ -20,7 +20,7 @@
     background-size: 100% 100%;
   }
   hr {
-    border-color:black;
+    border-color:red;
   }
   input {
     width: 100%;
@@ -31,7 +31,7 @@
     border-bottom: 2px solid red;
   }
   button {
-    background-color: #4CAF50; /* Green */
+    background-color: red;
     border: none;
     color: white;
     padding: 20px;
