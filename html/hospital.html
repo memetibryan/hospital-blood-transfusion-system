@@ -13,14 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- external files linking -->
-    <link rel="stylesheet" href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/hospital.css" rel="stylesheet" />
 
     <div id="main">
       <div class="left-column">
-        <img src="images/download.png" height="140px">
+        <img src="images/hospital.png" height="140px">
       </div>
       <div class="right-column">
-        <h1><strong>LOGIN AREA</strong></h1>
+        <h1><strong>HOSPITALS</strong></h1>
         <p>Blood Transfussion Website</p>
         <p>P.O BOX 326, Nairobi</p>
       </div>
@@ -32,10 +32,10 @@
     <div id="main">
       <div class="left-column"> 
         <form method="post">
-          <label for="fname">NAME(S) :</label>
+          <label for="fname">HOSPITAL NAME :</label>
           <input type="text" required="Yes" id="fname">
           <br><br>
-          <label for="lname">BLOOD TYPE :</label>
+          <label for="lname">LOCATION :</label>
           <input type="number" required="Yes" id="amount">
           <br><br>
         </form>
@@ -45,19 +45,19 @@
           <label for="fdate">DATE :</label>
           <input type="date" required="Yes" id="fdate">
           <br><br>
-          <label for="lname">TEL. NUMBER  :</label>
+          <label for="lname">CONTACT TELEPHONE :</label>
           <input type="number" required="Yes" id="acc">
           <br>
         </form>
       </div>
     </div>
 
-  <button type="button" onclick="formFunction()">SIGN UP</button>
+  <button type="button" onclick="signUp()">SIGN UP</button>
   <hr>
 
   <div id="display">
       <h3>Click below to Sign In if you already have an account</h3>
-    <button type="button" onclick="saveData()">SIGN IN</button><br><br>
+    <button type="button" onclick="signIn()">SIGN IN</button><br><br>
   </div>
   <body/>
 </html>
