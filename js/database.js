@@ -16,8 +16,12 @@ async function connect() {
         collections.forEach(c => console.log(c.collectionName));
 
         //inserting into patients
-        const insertCursor = await db.patients.insert([{"name": "Chaitanya","location": "voi","tel": 9876544567}])
-        
+        const insertCursor = await patients.insert({
+            "name": "Chaitanya",
+            "location": "voi",
+            "tel": 9876544567
+        })
+
         console.log(insertCursor.insertedCount)
 
         //search
