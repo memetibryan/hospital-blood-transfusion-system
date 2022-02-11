@@ -15,6 +15,7 @@
   <!-- external files linking -->
   <link rel="stylesheet" href="../css/user.css" rel="stylesheet" />
   <script type="text/javascript" src="../js/index.js"></script>
+  <script type="module" src="../js/database.js"></script>
 
   <div id="main">
     <div class="left-column">
@@ -43,8 +44,8 @@
     </div>
     <div class="right-column">
       <form>
-        <label for="fdate">DATE :</label>
-        <input type="date" required="Yes" id="fdate">
+        <label for="flocation">LOCATION :</label>
+        <input type="text" required="Yes" id="flocation">
         <br><br>
         <label for="lname">TEL. NUMBER :</label>
         <input type="number" required="Yes" id="tel">
@@ -108,17 +109,20 @@
       var span = document.getElementsByClassName("close")[0];
 
       // When the user clicks the button, open the modal 
-      btn.onclick = function () {
+      btn.onclick = function() {
+        
         modal.style.display = "block";
 
-        document.getElementById("ldate").innerHTML = document.getElementById("fdate").value;
+        document.getElementById("ldate").innerHTML = document.getElementById("flocation").value;
         document.getElementById("name").innerHTML = document.getElementById("fname").value;
         document.getElementById('ltype').innerHTML = document.getElementById('type').value;
         document.getElementById("ltel").innerHTML = document.getElementById("tel").value;
+
       }
+      
 
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function () {
+      span.onclick = function() {
         modal.style.display = "none";
       }
 

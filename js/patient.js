@@ -1,8 +1,7 @@
-const {
-    MongoClient
-} = require('mongodb')
+const {MongoClient} = require('mongodb')
 
 const url = 'mongodb://127.0.0.1:27017'
+
 connect();
 
 async function connect() {
@@ -17,9 +16,9 @@ async function connect() {
 
         //inserting into patients
         const insertCursor = await patients.insert({
-            "name": "Chaitanya",
-            "location": "voi",
-            "tel": 9876544567
+            "name": document.getElementById("fname").value,
+            "location": document.getElementById("flocation").value,
+            "tel": document.getElementById("tel").value
         })
 
         console.log(insertCursor.insertedCount)
