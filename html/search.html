@@ -2,40 +2,90 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <title>SEARCH PATIENTS</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8" />
+    <title>SEARCH PATIENTS</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- external files linking -->
-  <link rel="stylesheet" href="../css/hospital.css" rel="stylesheet" />
-  <script type="text/javascript" src="../js/index.js"></script>
+    <!-- external files linking -->
+    <link rel="stylesheet" href="../css/hospital.css" rel="stylesheet" />
+    <script type="text/javascript" src="../js/index.js"></script>
 
-  <div id="main">
-    <div class="left-column">
-      <img src="../images/search.jpg" height="200px">
-    </div>
-    <div class="right-column">
-      <h1><strong>PATIENT'S LOCATION</strong></h1>
-      <p>Blood Transfusion Website</p>
-      <p>P.O BOX 326, Nairobi</p>
-    </div>
-  </div><br>
-  <hr>
+    <div id="main">
+        <div class="left-column">
+            <img src="../images/search.jpg" height="200px">
+        </div>
+        <div class="right-column">
+            <h1><strong>PATIENT'S LOCATION</strong></h1>
+            <p>Blood Transfusion Website</p>
+            <p>P.O BOX 326, Nairobi</p>
+        </div>
+    </div><br>
+    <hr>
 </head>
 
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td,
+    th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
 <body>
-  <div id="main">
-    <div class="topnav">
-        <input type="text" placeholder="Search..">
-        <button type="button">Search</button>
-      </div>
-  </div>
-  <hr>
-  <button type="button" onclick="home()">Back Home</button><br><br>
+    <div id="main">
+        <div class="topnav">
+            <input type="text" placeholder="Search..">
+            <button type="button">Search</button>
+        </div>
+    </div>
+
+    <h2>Available Donors</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Blood Type</th>
+        </tr>
+        <tr id="voi">
+            <td>Alfreds Futterkiste</td>
+            <td>Voi</td>
+            <td>O+</td>
+        </tr>
+        <tr id="limuru">
+            <td>Centro Moctezuma</td>
+            <td>Limuru</td>
+            <td>AB</td>
+        </tr>
+        <tr id="nakuru">
+            <td>Ernst Handel</td>
+            <td>Nakuru</td>
+            <td>A+</td>
+        </tr>
+        <tr id="mombasa">
+            <td>Elsy Wambui</td>
+            <td>Mombasa</td>
+            <td>B+</td>
+        </tr>
+    </table>
+    <hr>
+    <button type="button" onclick="home()">Back Home</button><br><br>
+
 </html>
