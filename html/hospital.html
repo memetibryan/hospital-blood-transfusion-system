@@ -1,68 +1,67 @@
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset="utf-8" />
-    <title>HOSPITAL'S LOGIN</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <meta charset="utf-8" />
+  <title>HOSPITAL'S LOGIN</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- external files linking -->
-    <link rel="stylesheet" href="../css/hospital.css" rel="stylesheet" />
-    <script type="text/javascript " src="../js/index.js"></script>
+  <!-- external files linking -->
+  <link rel="stylesheet" href="../css/hospital.css" rel="stylesheet" />
+  <script type="text/javascript " src="../js/index.js"></script>
 
-    <div id="main">
-      <div class="left-column">
-        <img src="../images/hospital.png" height="140px">
-      </div>
-      <div class="right-column">
-        <h1><strong>HOSPITALS</strong></h1>
-        <p>Blood Transfusion Website</p>
-        <p>P.O BOX 326, Nairobi</p>
-      </div>
+  <div id="main">
+    <div class="left-column">
+      <img src="../images/hospital.png" height="140px">
     </div>
-    <hr>
-  </head>
-
-  <body>
-    <div id="main">
-      <div class="left-column"> 
-        <form method="post">
-          <label for="fname">HOSPITAL NAME :</label>
-          <input type="text" required="Yes" id="fname">
-          <br><br>
-          <label for="lname">LOCATION :</label>
-          <input type="text" required="Yes" id="location">
-          <br><br>
-        </form>
-      </div>
-      <div class="right-column">
-        <form>
-          <label for="fdate">DATE :</label>
-          <input type="date" required="Yes" id="fdate">
-          <br><br>
-          <label for="lname">CONTACT TELEPHONE :</label>
-          <input type="number" required="Yes" id="telephone">
-          <br>
-        </form>
-      </div>
+    <div class="right-column">
+      <h1><strong>HOSPITALS</strong></h1>
+      <p>Blood Transfusion Website</p>
+      <p>P.O BOX 326, Nairobi</p>
     </div>
+  </div>
+  <hr>
+</head>
 
-  <button id="myBtn" type="button">SIGN UP</button>
+<body>
+  <div id="main">
+    <div class="left-column">
+      <form method="post">
+        <label for="fname">HOSPITAL NAME :</label>
+        <input type="text" required="Yes" id="fname">
+        <br><br>
+        <label for="lname">LOCATION :</label>
+        <input type="text" required="Yes" id="location">
+        <br><br>
+      </form>
+      <button id="myBtn" type="button">SIGN UP</button>
+    </div>
+    <div class="right-column">
+      <form>
+        <label for="fdate">DATE :</label>
+        <input type="date" required="Yes" id="fdate">
+        <br><br>
+        <label for="lname">CONTACT TELEPHONE :</label>
+        <input type="number" required="Yes" id="telephone">
+        <br>
+      </form>
+    </div>
+  </div>
   <hr>
   <button type="button" onclick="home()">Back Home</button><br><br>
 
-    <!-- The Modal -->
+  <!-- The Modal -->
   <div id="myModal" class="modal">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
 
       <div id="main1">
         <div class="left-column">
@@ -75,46 +74,51 @@
         </div>
       </div>
       <hr>
-        <div id="display">
-        <h4>DATE: <p id="ldate" style="font-weight: 1000;"></p></h2>
-        <h4>HOSPITAL NAME: <p id="name" style="font-weight: 1000;"></p></h2>
-        <h4>LOCATION: <p id="llocation" style="font-weight: 1000;"></p></h2>
-        <h4>CONTACT TEL. : <p id="ltell" style="font-weight: 1000;"></p></h2>
-        <button type="button" style="background-color: red;">Verify</button><br>
-  </div>
+      <div id="display">
+        <h4>DATE: <p id="ldate" style="font-weight: 1000;"></p>
+          </h2>
+          <h4>HOSPITAL NAME: <p id="name" style="font-weight: 1000;"></p>
+            </h2>
+            <h4>LOCATION: <p id="llocation" style="font-weight: 1000;"></p>
+              </h2>
+              <h4>CONTACT TEL. : <p id="ltell" style="font-weight: 1000;"></p>
+                </h2>
+                <button type="button" style="background-color: red;">Verify</button><br>
+      </div>
       <hr>
-  </div>
-  <body/>
+    </div>
+</body>
 <script>
   // Get the modal
-    var modal = document.getElementById("myModal");
+  var modal = document.getElementById("myModal");
 
   // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+  var btn = document.getElementById("myBtn");
 
   // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+  var span = document.getElementsByClassName("close")[0];
 
-  // When the user clicks the button, open the modal 
-    btn.onclick = function() {
+  // When the user clicks the button, open the modal
+  btn.onclick = function () {
     modal.style.display = "block";
 
     document.getElementById("ldate").innerHTML = document.getElementById("fdate").value;
     document.getElementById("name").innerHTML = document.getElementById("fname").value;
     document.getElementById('llocation').innerHTML = document.getElementById('location').value;
     document.getElementById("ltell").innerHTML = document.getElementById("telephone").value;
-    }
+  }
 
   // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
+  span.onclick = function () {
     modal.style.display = "none";
-    }
+  }
 
   // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
+  window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }
   }
 </script>
+
 </html>
