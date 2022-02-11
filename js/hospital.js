@@ -14,18 +14,18 @@ async function connect() {
         const collections = await db.collections();
         collections.forEach(c => console.log(c.collectionName));
 
-        //inserting into patients
-        const insertCursor = await patients.insert({
+        //inserting into hospitals
+        const insertCursor = await hospitals.insert({
             "name": document.getElementById("fname").value,
-            "location": document.getElementById("flocation").value,
-            "tel": document.getElementById("tel").value
+            "location": document.getElementById("location").value,
+            "tel": document.getElementById("telephone").value
         })
 
         console.log(insertCursor.insertedCount)
 
         //search
-        const patients = db.collection("patients");
-        const searchCursor = await patients.find();
+        const hospitals = db.collection("hospitals");
+        const searchCursor = await hospitals.find();
         const result = await searchCursor.toArray();
         console.table(result)
 
