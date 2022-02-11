@@ -9,3 +9,7 @@ function hospital() {
 function home() {
 	window.location = "../index.html"
 }
+
+function search() {
+	window.location = "search.html"
+}
